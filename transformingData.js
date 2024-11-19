@@ -1,3 +1,4 @@
+// Part 3: Transforming Data
 /* Instructions
 For each row of data in the result array produced by your code above, create an object where the key of each value is the heading for that value’s column.
 Convert these keys to all lowercase letters for consistency.
@@ -53,4 +54,4 @@ topHeaders[j]: Accesses the jth element of the topHeaders array, which correspon
 const cachedconvertedData = convertedData;
 
 // Output the convertedData array. This will display the data as objects with lowercase keys
-console.log('Transformed Data:', cachedconvertedData);
+console.log('CSV Job Data Set:', cachedconvertedData);

@@ -69,25 +69,26 @@ You do not need to format the data, the following works well.
 console.log(cell1, cell2, cell3, cell4);*/
 
 // CSVFlData as a string
-let csvFlData = 
+let csvJobData = 
 `ID,Name,Occupation,Age\n
 42,Bruce,Knight,41\n
 57,Bob,Fry Cook,19\n
 63,Blaine,Quiz Master,58\n
 98,Bill,Doctor’s Assistant,26`;
 
-// Split the CSV data into rows at the newline character. This creates an array of rows
+// Splits the CSV data into rows at the newline character. This creates an array of rows
 // ["ID,Name,Occupation,Age", "42,Bruce,Knight,41", "57,Bob,Fry Cook,19", "63,Blaine,Quiz Master,58", "98,Bill,Doctor’s Assistant,26"]
-let rows = csvFlData.split("\n");
+let rows = csvJobData.split("\n");
 
 // Loop through each row in the array
 for (let i = 0; i < rows.length; i++) {
-  let row = rows[i]; // Get the current row
+  let row = rows[i]; 
 
-// Split the row into cells at the comma. This creates an array of cells
+// Splits the row into cells at the comma. This creates an array of cells
 // ["ID", "Name", "Occupation", "Age"]
 let cells = row.split(",");
 
 // Log the first four cells. This will log the ID, Name, Occupation, and Age
 console.log(cells[0], cells[1], cells[2], cells[3]);
 }
+

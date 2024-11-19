@@ -7,11 +7,7 @@ Since the heading for each column will be stored in the object keys, you do not 
 
 
 // This is a STRING of CSV tabular data. Each line is separated by a newline character (\n) while each cell is separated by a comma.
-const csvJobData  = `ID,Name,Occupation,Age
-42,Bruce,Knight,41
-57,Bob,Fry Cook,19
-63,Blaine,Quiz Master,58
-98,Bill,Doctor's Assistant,26`;
+const csvJobData = `ID,Name,Occupation,Age\n42,Bruce,Knight,41\n57,Bob,Fry Cook,19\n63,Blaine,Quiz Master,58\n98,Bill,Doctor’s Assistant,26`;
 
 // Splits the CSV data into rowsEntries and cells
 const rowsEntries = csvJobData .split('\n'); 
